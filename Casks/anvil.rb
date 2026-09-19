@@ -14,6 +14,10 @@ cask "anvil" do
 
   app "Anvil.app"
 
+  postflight_steps do
+    run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{appdir}}/Anvil.app"]
+  end
+
   caveats <<~EOS
     Anvil is ad-hoc signed but is not notarized by Apple.
     If macOS blocks its first launch, open System Settings >
