@@ -1,9 +1,9 @@
 cask "anvil" do
   arch arm: "arm64", intel: "x64"
 
-  version "2.0.0"
-  sha256 arm:   "feec50e8e0cbd9f50f0ca4bcc1dd2370cd610daf9e27e6582a9a408ef2660861",
-         intel: "03b3881fabffd5d8795efd2ee894fb16c337f7abf49e53ca266f6911ee8ed05f"
+  version "2.0.1"
+  sha256 arm:   "7f11e4cad9a4aab5990f5e7ee2cdc2e53c7fce4af9121dac418683fded3fa628",
+         intel: "f69172a010a7fcbcf8c768ea57db45984244096b11382650ef11920cac3b66fe"
 
   url "https://github.com/lucaspiritogit/anvil/releases/download/v#{version}/Anvil-#{version}-#{arch}.dmg"
   name "Anvil"
